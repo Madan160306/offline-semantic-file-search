@@ -1,0 +1,13 @@
+# Ralph Loop Progress Log
+# The agent appends entries here. Do NOT manually edit or delete entries.
+# Format: [YYYY-MM-DD HH:MM] Action: description
+
+[2026-03-01 15:54] Initialized: progress.txt created. No tasks started yet.
+[2026-03-01 17:15] Completed Task 1: Improve Search Result Display — Open File Location. Added "Copy path" and "Open folder" buttons on hover in Dashboard.tsx.
+[2026-03-01 17:21] Completed Task 2: Add Result Count Summary. Added a summary line above search results in Dashboard.tsx.
+[2026-03-01 17:25] Completed Task 3: Improve Empty State UI. Added a "Getting Started" empty state card in Dashboard.tsx.
+[2026-03-01 17:30] Completed Task 4: Add Keyboard Shortcut for Search Focus. Added / for focus and Escape for blur/clear shortcuts in Dashboard.tsx.
+[2026-03-01 17:35] Completed Task 5: Add Supported File Types to the Index Directory Panel. Added info row in the Indexing section in Dashboard.tsx.
+[2026-03-01 17:42] Completed Task 6: Backend — Return File Size in Search Results. Added file size to results in both backend and frontend.
+[2026-03-01 17:48] Completed Task 7: Backend — Add /browse Endpoint. Implemented GET /browse in api.py with error handling.
+[2026-03-01 17:55] Completed Task 8: Frontend — Dark/Light Mode Toggle. Added toggle button in header and persistent theme logic in Dashboard.tsx.

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ⚠️ AGENT MUST REPLACE: These are placeholder colors. You MUST define a custom palette before writing components. */
+    /* The template uses distinctive placeholder colors to force customization - do NOT use these in production! */
+    
+    /* 
+     * EXAMPLE PALETTES (use as inspiration, replace with your own):
+     * 
+     * Modern SaaS (Business/Enterprise):
+     * --primary: 217 91% 60%;        (Blue #2563EB)
+     * --accent: 217 91% 65%;         (Lighter blue #3B82F6)
+     * 
+     * Bold Tech (Startups/Developer Tools):
+     * --primary: 262 83% 58%;        (Purple #8B5CF6)
+     * --accent: 262 83% 68%;         (Lighter purple #A855F7)
+     * 
+     * Quantum Rose (Creative/Design):
+     * --primary: 330 81% 50%;        (Pink #E6067A)
+     * --accent: 330 81% 70%;         (Lighter pink #F472B6)
+     * 
+     * Ocean Depth (Calm/Professional):
+     * --primary: 200 98% 39%;        (Deep teal #0D9488)
+     * --accent: 200 98% 50%;         (Teal #14B8A6)
+     * 
+     * Sunset Warmth (Friendly/Welcoming):
+     * --primary: 24 95% 53%;         (Orange #F97316)
+     * --accent: 24 95% 63%;          (Lighter orange #FB923C)
+     */
+    
+    /* Colors - REPLACE ALL VALUES BELOW with your custom palette */
+    --background: 220 20% 97%;
+    --foreground: 220 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+    --primary: 168 72% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 168 40% 92%;
+    --secondary-foreground: 168 72% 22%;
+    --muted: 220 16% 93%;
+    --muted-foreground: 220 10% 50%;
+    --accent: 168 60% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 168 72% 36%;
+    --primary-glow: 168 72% 50%;
+    --gradient-primary: linear-gradient(135deg, hsl(168 72% 36%), hsl(180 65% 40%));
+    --shadow-glow: 0 0 24px hsl(168 72% 36% / 0.2);
+
+    /* Charts */
+    --chart-1: 168 72% 36%;
+    --chart-2: 180 65% 40%;
+    --chart-3: 155 60% 42%;
+    --chart-4: 145 55% 45%;
+    --chart-5: 200 60% 38%;
+
+    /* Sidebar */
+    --sidebar: 220 20% 97%;
+    --sidebar-foreground: 220 25% 15%;
+    --sidebar-primary: 168 72% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 168 40% 92%;
+    --sidebar-accent-foreground: 168 72% 22%;
+    --sidebar-border: 220 14% 88%;
+    --sidebar-ring: 168 72% 36%;
+
+    /* Fonts */
+    --font-sans: DM Sans, sans-serif;
+    --font-serif: Lora, serif;
+    --font-mono: IBM Plex Mono, monospace;
+
+    /* Shadows */
+    --shadow-2xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0px 4px 8px -1px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0px 4px 8px -1px hsl(0 0% 0% / 0.10), 0px 1px 2px -2px hsl(0 0% 0% / 0.10);
+    --shadow: 0px 4px 8px -1px hsl(0 0% 0% / 0.10), 0px 1px 2px -2px hsl(0 0% 0% / 0.10);
+    --shadow-md: 0px 4px 8px -1px hsl(0 0% 0% / 0.10), 0px 2px 4px -2px hsl(0 0% 0% / 0.10);
+    --shadow-lg: 0px 4px 8px -1px hsl(0 0% 0% / 0.10), 0px 4px 6px -2px hsl(0 0% 0% / 0.10);
+    --shadow-xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.10), 0px 8px 10px -2px hsl(0 0% 0% / 0.10);
+    --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 0% / 0.25);
+
+    /* Misc */
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* ⚠️ AGENT MUST REPLACE: Dark mode colors - replace with your custom dark palette */
+    --background: 224 30% 9%;
+    --foreground: 210 20% 88%;
+    --card: 222 28% 13%;
+    --card-foreground: 210 20% 88%;
+    --popover: 222 28% 13%;
+    --popover-foreground: 210 20% 88%;
+    --primary: 168 68% 44%;
+    --primary-foreground: 224 30% 9%;
+    --secondary: 222 24% 18%;
+    --secondary-foreground: 210 15% 65%;
+    --muted: 222 28% 13%;
+    --muted-foreground: 220 10% 48%;
+    --accent: 168 55% 35%;
+    --accent-foreground: 210 20% 88%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 20% 22%;
+    --input: 222 20% 22%;
+    --ring: 168 68% 44%;
+    --primary-glow: 168 68% 55%;
+    --gradient-primary: linear-gradient(135deg, hsl(168 68% 44%), hsl(180 60% 48%));
+    --shadow-glow: 0 0 32px hsl(168 68% 44% / 0.25);
+
+    --chart-1: 168 68% 44%;
+    --chart-2: 180 60% 48%;
+    --chart-3: 155 55% 46%;
+    --chart-4: 145 50% 42%;
+    --chart-5: 200 55% 44%;
+
+    --sidebar: 222 28% 11%;
+    --sidebar-foreground: 210 20% 88%;
+    --sidebar-primary: 168 68% 44%;
+    --sidebar-primary-foreground: 224 30% 9%;
+    --sidebar-accent: 222 24% 18%;
+    --sidebar-accent-foreground: 210 15% 65%;
+    --sidebar-border: 222 20% 22%;
+    --sidebar-ring: 168 68% 44%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    letter-spacing: var(--tracking-normal);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
