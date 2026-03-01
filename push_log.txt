@@ -1,0 +1,28 @@
+﻿git : Pushing to https://g
+ithub.com/Madan160306/offl
+ine-semantic-file-search
+At line:1 char:1
++ git push origin 
+main:master --force 
+--verbose 2>&1 | Out-File 
+-FilePa ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (P  
+  ushing to http...tic-   
+ file-search:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+To https://github.com/Mada
+n160306/offline-semantic-f
+ile-search
+ = [up to date]      main 
+-> master
+updating local tracking 
+ref 'refs/remotes/origin/m
+aster'
+Everything up-to-date
